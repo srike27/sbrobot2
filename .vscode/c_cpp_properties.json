@@ -1,0 +1,41 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/srike27/ros2_ws/install/turtlebot3_fake_node/include/**",
+        "/home/srike27/ros2_ws/install/turtlebot3_msgs/include/**",
+        "/home/srike27/ros2_ws/install/turtlebot3_gazebo/include/**",
+        "/home/srike27/ros2_ws/install/toto_msgs/include/**",
+        "/home/srike27/ros2_ws/install/rosbridge_test_msgs/include/**",
+        "/home/srike27/ros2_ws/install/rosbridge_msgs/include/**",
+        "/home/srike27/ros2_ws/install/rosapi_msgs/include/**",
+        "/home/srike27/ros2_ws/install/dynamixel_sdk_custom_interfaces/include/**",
+        "/home/srike27/ros2_ws/install/dynamixel_sdk/include/**",
+        "/home/srike27/ros2_ws/install/cpp_testing/include/**",
+        "/home/srike27/ros2_ws/install/aruco_ros/include/**",
+        "/home/srike27/ros2_ws/install/aruco_msgs/include/**",
+        "/home/srike27/ros2_ws/install/aruco/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/srike27/ros2_ws/src/aruco_ros/aruco/include/**",
+        "/home/srike27/ros2_ws/src/aruco_ros/aruco_ros/include/**",
+        "/home/srike27/ros2_ws/src/cpp_testing/include/**",
+        "/home/srike27/ros2_ws/src/sbrobot/include/**",
+        "/home/srike27/ros2_ws/src/toto2/camera/include/**",
+        "/home/srike27/ros2_ws/src/toto2/rplidar_ros/include/**",
+        "/home/srike27/ros2_ws/src/totoce_ui/include/**",
+        "include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

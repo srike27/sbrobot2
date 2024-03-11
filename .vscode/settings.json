@@ -1,0 +1,49 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/srike27/ros2_ws/install/turtlebot3_teleop/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/turtlebot3_example/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/toto_msgs/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/toto2_teleop/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/sbrobot/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/rosbridge_test_msgs/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/rosbridge_server/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/rosbridge_msgs/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/rosapi/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/rosbridge_library/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/rosapi_msgs/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/py_pubsub/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/plotter/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/my_package/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/cpp_testing/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/aruco_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/srike27/ros2_ws/install/turtlebot3_teleop/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/turtlebot3_example/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/toto_msgs/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/toto2_teleop/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/sbrobot/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/rosbridge_test_msgs/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/rosbridge_server/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/rosbridge_msgs/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/rosapi/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/rosbridge_library/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/rosapi_msgs/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/py_pubsub/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/plotter/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/my_package/lib/python3.10/site-packages",
+        "/home/srike27/ros2_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/cpp_testing/local/lib/python3.10/dist-packages",
+        "/home/srike27/ros2_ws/install/aruco_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "files.associations": {
+        "functional": "cpp"
+    }
+}

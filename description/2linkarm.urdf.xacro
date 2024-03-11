@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<robot name="2linkarm">
+
+  <!-- Link Definitions -->
+  <link name="base_footprint">
+  </link>
+
+  <link name="base_link">
+  </link>
+
+  <link name="link_1">
+  <visual name="visual">
+      <origin xyz="0.25 0 0" rpy="0 1.5707 0"/>
+      <geometry>
+        <cylinder radius="0.05" length="0.5"/>
+      </geometry>
+    </visual>
+  
+  </link>
+
+  <link name="link_2">
+  <visual name="visual">
+      <origin xyz="0.25 0 0" rpy="0 1.5707 0"/>
+      <geometry>
+        <cylinder radius="0.05" length="0.5"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Joint Definitions -->
+  <joint type="fixed" name="dummy">
+    <origin xyz="0.0 0.0 0" rpy="0 0 0"/>
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+  </joint>
+
+  <joint type="continuous" name="joint_1">
+    <origin xyz="0.5 0.0 0" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="link_1"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+
+  <joint type="continuous" name="joint_2">
+    <origin xyz="0.5 0.0 0.0" rpy="0 0 0"/> 
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  
+</robot>
