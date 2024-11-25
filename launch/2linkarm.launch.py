@@ -25,22 +25,31 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_description_raw}]  # add other parameters here if required
     )
 
-    # Configure Gazebo launch, setting it to start paused
-    # gazebo = IncludeLaunchDescription(
-    #     PythonLaunchDescriptionSource([os.path.join(
-    #         get_package_share_directory('gazebo_ros'), 'launch'), '/gazebo.launch.py']),
-    #     launch_arguments={'paused': 'true'}.items(),  # This line has been added/modified
-    # )
+    # Configure the joint_state_publisher_gui node
+    joint_state_publisher_gui = Node(
+        package='joint_state_publisher_gui',
+        executable='joint_state_publisher_gui',
+        output='screen',
+    )
 
-    # # Configure the spawn_entity node
-    # spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
-    #                     arguments=['-topic', 'robot_description',
-    #                                '-entity', 'my_bot'],
-    #                     output='screen')
+    # Configure RViz node
+    rviz_config_path = os.path.join(
+        get_package_share_directory(pkg_name),
+        'rviz',  # Adjust this path based on your package structure
+        'sbrobot_config.rviz'  # Replace with your RViz config file name
+    )
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        output='screen',
+        arguments=['-d', rviz_config_path],
+    )
 
     # Run the nodes
     return LaunchDescription([
-        #gazebo,
         node_robot_state_publisher,
-        #spawn_entity
+        joint_state_publisher_gui,
+        rviz_node,
     ])
+

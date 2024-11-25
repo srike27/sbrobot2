@@ -1,31 +1,63 @@
 <?xml version="1.0"?>
-
 <robot name="2linkarm">
 
   <!-- Link Definitions -->
   <link name="base_footprint">
+    <visual>
+      <geometry>
+        <box size="0.1 0.1 0.01"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </visual>
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
   </link>
 
   <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+      <origin xyz="0 0 0.025" rpy="0 0 0"/>
+    </visual>
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
   </link>
 
   <link name="link_1">
-  <visual name="visual">
+    <visual>
       <origin xyz="0.25 0 0" rpy="0 1.5707 0"/>
       <geometry>
         <cylinder radius="0.05" length="0.5"/>
       </geometry>
     </visual>
-  
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0.25 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.02" ixy="0.0" ixz="0.0" iyy="0.02" iyz="0.0" izz="0.02"/>
+    </inertial>
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
   </link>
 
   <link name="link_2">
-  <visual name="visual">
+    <visual>
       <origin xyz="0.25 0 0" rpy="0 1.5707 0"/>
       <geometry>
         <cylinder radius="0.05" length="0.5"/>
       </geometry>
     </visual>
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0.25 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.02" ixy="0.0" ixz="0.0" iyy="0.02" iyz="0.0" izz="0.02"/>
+    </inertial>
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
   </link>
 
   <!-- Joint Definitions -->
@@ -36,12 +68,11 @@
   </joint>
 
   <joint type="continuous" name="joint_1">
-    <origin xyz="0.5 0.0 0" rpy="0 0 0"/>
+    <origin xyz="0.0 0.0 0.05" rpy="0 0 0"/>
     <parent link="base_link"/>
     <child link="link_1"/>
     <axis xyz="0 0 1"/>
   </joint>
-
 
   <joint type="continuous" name="joint_2">
     <origin xyz="0.5 0.0 0.0" rpy="0 0 0"/> 
@@ -51,3 +82,4 @@
   </joint>
   
 </robot>
+
